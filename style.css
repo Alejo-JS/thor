@@ -1,0 +1,329 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: dameron;
+    src: url(fonts/dameron/dameron.ttf);
+}
+
+@font-face{
+
+    font-family: damer;
+    src: url(fonts/dameron/dameron3dital.ttf);
+}
+
+body{
+
+    background: linear-gradient( 70deg, blue, pink);
+
+}
+
+header{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: linear-gradient( 70deg, blue, pink);
+    opacity: 90%;
+    position: sticky;
+ 
+
+
+}
+
+
+header img{
+    width: 200px;
+    height: 100px;
+}
+
+nav {
+
+    display: flex;
+    gap: 100px;
+    margin:0 6em 0 0;
+}
+
+nav button{
+
+    width: 50px;
+    height: 20px;
+    background-color: transparent;
+    border: 1px;
+    cursor: pointer;
+    font-size: 18px;
+    font-family: dameron;
+}
+
+#ele h1 {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+    font-family: dameron;
+    font-size: 70px;
+}
+
+#ele .ser{
+
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 50px 20px 50px 20px;
+    font-size: 30px;
+    font-family: dameron;
+    
+    
+}
+
+#ele{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+#siu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+#siu .vamo{
+
+    width: 40%;
+    height: 50%;
+    transition: all 0.5s;
+   
+}
+
+#sed{
+    
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+
+}
+
+#sed h1{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+    font-family: dameron;
+    font-size: 60px;
+}
+#sed p{
+
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 50px 20px 50px 20px;
+    font-size: 20px;
+    font-family: dameron;
+}
+
+#gallery{
+
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.gal{
+
+    display: flex;
+    width: 500%;
+    height: 100%;
+}
+
+#gallery .gal img{
+
+    width: 300px;
+    height: 500px;
+    object-fit: cover;
+    display: block;
+    
+
+}
+
+.im{
+    display: flex;
+    height: 100vh;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+footer{
+
+    
+    text-align: center;
+    padding: 20px;
+    
+   
+}
+
+footer nav {
+
+    list-style: none;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 20px;
+   
+  
+
+
+}
+
+footer nav ul li{
+
+    display: inline-block;
+    margin: 0 10px;
+   
+
+}
+
+footer p{
+    color: aqua;
+    font-family: dameron;
+}
+
+footer nav ul li a{
+
+    color: aqua;
+    gap: 50px;
+    font-family: dameron;
+    text-align: center;
+    justify-content: center;
+    
+
+}
+
+
+
+
+@media (max-width: 600px) {
+
+    header{
+
+        align-items: center;
+        background: linear-gradient( 70deg, blue, pink);
+        opacity: 90%;
+        position: sticky;
+     
+    
+    
+    }
+    
+    
+    header img{
+        width: 100px;
+        height: 50px;
+    }
+    
+    nav {
+    
+        display: flex;
+        gap: 70px;
+        margin:0 2em 0 0;
+    }
+    
+    nav button{
+    
+        width: 50px;
+        height: 20px;
+        background-color: transparent;
+        border: 1px;
+        cursor: pointer;
+        font-size: 15px;
+        font-family: dameron;
+    }
+
+    #ele h1 {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 30px;
+        font-family: dameron;
+        font-size: 60px;
+        text-align: center;
+    }
+    
+    #ele .ser{
+    
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        margin: 50px 10px 50px 10px;
+        font-size: 25px;
+        font-family: dameron;
+        
+        
+    }
+    
+    #ele{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      
+    }
+
+    #siu .vamo{
+
+        width: 90%;
+        height: 50%;
+        transition: all 0.5s;
+    }
+
+    #sed{
+    
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    
+    
+    }
+    
+    #sed h1{
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 80px;
+        font-family: dameron;
+        font-size: 60px;
+    }
+    #sed p{
+    
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        margin: 50px 10px 50px 10px;
+        font-size: 20px;
+        font-family: dameron;
+    }
+
+    #gallery{
+
+        height: 100vh;
+        overflow: hidden;
+        position: relative;
+    margin-top: -10px;}
+
+
+}

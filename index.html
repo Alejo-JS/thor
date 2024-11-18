@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scrolling</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/Thor_The_Dark_World_Logo.svg">
+    
+</head>
+<body>
+    
+    <header>
+        <div>
+            <a href="#"><img src="img/Thor-Logo-2011.png" alt=""></a>
+        </div>
+
+        <nav>
+            <button>mjolnir</button>
+            <button>avengers</button>
+            <button>asgard </button>
+            
+        </nav>
+    </header>
+
+    <section id="ele">
+        <h1 id="somo">thor</h1>
+        <p class="ser" >thor es un personaje sumamente musculoso, <br>su carisma lo ha caracterizado en uno de los mejores super heroes del universo marvel,<br>
+            en efecto tiene el poder de un "Dios" lo que hace que sea sumamente fuerte </p>
+
+    </section>
+
+    <section id="siu">
+        <img class="vamo" src="img/Avengers_Infinity_War_Chris_Hemsworth_Thor_hero_550206_1271x1024.jpg" alt="">
+
+    </section>
+
+    <section id="sed">
+        <h1>historia</h1>
+        <p class="pepe">Thor era el dios de la guerra y la lucha salvaje. Era el hijo de Odin, y el más fuerte de todos los dioses . <br>Siempre llevaba su martillo Mjølner que tenía la maravillosa capacidad de siempre dar en el blanco para después regresar a su dueño. <br>Cuando lo tiraba se veían relámpagos en el cielo y sonaban truenos cuando viajaba en su carro llevado por dos machos cabríos de nombre Tandgnojst y Tandgrisner. </p>
+       <img  class="th" src="img/6477383d59a48.avif" alt=""> 
+       <p class="ete">Los machos cabríos podría ser sacrificados al atardecer y luego resucitar la mañana siguiente, <br>si se tenía cuidado de no romper ningún hueso y si se recogían todos los huevos y se metían en la piel del animal. <br>También poseía un cinturón de fuerza que doblaba su ya de por si considerable fuerza y unos guantes de hierro. <br>Thor estuvo casado con Sif y tuvo tres hijos; Magni, Modi y Trud.</p>
+        
+   
+    </section>
+
+    <section id="gallery">
+        <div class="gal">
+            <div class="im"><img src="img/galle 1.jpg" alt=""></div>
+            <div class="im"><img src="img/galle 2.jpg" alt=""></div>
+            <div class="im"><img src="img/galle 3.jpg" alt=""></div>
+            <div class="im"><img src="img/galle 4.jpg" alt=""></div>
+            <div class="im"><img src="img/galle 5.jpg" alt=""></div>
+
+        </div>
+    </section>
+
+
+    <footer>
+        <p>scrolling todos los derechos reservados</p>
+        <nav class="na" >
+            <ul>
+                <li><a href="#">acerca de</a></li>
+                <li><a href="#">inicio</a></li>
+                <li><a href="#">politicas de privacidad</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+
+ 
+
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+<script src="https://unpkg.com/scrollreveal"></script>
+
+<script>
+
+ScrollReveal().reveal('.pepe', { delay: 500, reset: true});
+ScrollReveal().reveal('.th', { delay: 600, reset: true });
+ScrollReveal().reveal('.ete', { delay: 700, reset: true });
+
+</script>
+
+<script>
+    var controller = new ScrollMagic.Controller();
+    var galleryTween = gsap.to('.gal', {
+        x:'-100%',
+        ease: 'none'
+
+    });
+    
+    var scene = new ScrollMagic.Scene({
+        triggerElement:'#gallery',
+        duration: '100%',
+        triggerHook: 0
+        })
+
+    .setTween(galleryTween)
+    .setPin('#gallery')
+    .addTo(controller);
+</script>
+
+
+</body>
+</html>
